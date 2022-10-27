@@ -1,15 +1,36 @@
 import styled from "styled-components"
 // import image from '../assets/illustration-working.svg'
-// import cloud from '../assets/cloud.svg'
+import cloud from '../assets/cloud.svg'
 import working from '../assets/working.svg'
 import Button from "./Button"
 import Container from "./utils/Container"
 
 const StyledHero = styled.section`
     padding-bottom: 10.5rem;
+    padding-inline: 1.5rem;
+    position: relative;
+
+    &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            /* width: 658px;
+            height: 482px; */
+            position: absolute;
+            background-image: url(${cloud});
+            background-repeat: no-repeat;
+            background-size: 110%;
+            /* background-size: 120%; */
+            /* background-position: top; */
+        }
 
     .hero__image {
+        /* position: relative; */
         margin-block: 4.1875rem 3.75rem;
+        /* background-image: url(${cloud});
+        background-repeat: no-repeat;
+        background-size: 120%;
+        background-position: 10% 100%; */
 
         img {
             position: relative;
@@ -36,7 +57,6 @@ const StyledHero = styled.section`
         display: flex;
         gap: 80px;
         padding-block: 8.75rem 12.1875rem;
-
 
         .hero__image {
             order: 1;

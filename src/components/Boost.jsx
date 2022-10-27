@@ -34,9 +34,11 @@ const Boost = () => {
     return (
         <StyledBoost>
             <h3>Boost your links today</h3>
-            <Button
-                text='Get Started'
-             />
+            <a href="#shortener">
+                <Button
+                    text='Get Started'
+                />
+            </a>
         </StyledBoost>
     )
 }

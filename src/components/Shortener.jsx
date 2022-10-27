@@ -8,6 +8,7 @@ import bgDesktop from '../assets/bg-shorten-desktop.svg'
 const StyledShortener = styled.div`
     position: relative;
     top: -76px;
+    scroll-margin-top: 10rem;
 
     form {
         position: relative;
@@ -140,7 +141,7 @@ const Shortener = () => {
     }
 
     return (
-        <StyledShortener>
+        <StyledShortener id="shortener">
             <form 
                 onSubmit={handleSubmit} 
                 ref={formRef}

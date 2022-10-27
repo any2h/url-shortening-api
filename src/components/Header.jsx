@@ -10,6 +10,7 @@ const StyledHeader = styled.header`
     height: 33px;
     display: flex;
     justify-content: space-between;
+    padding-inline: 1.5rem;
     margin-top: 40px;
     font-size: ${({ theme }) => theme.fontSizes.md1};
     color: white;

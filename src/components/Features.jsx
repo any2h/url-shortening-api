@@ -8,11 +8,11 @@ import icon3 from '../assets/icon-fully-customizable.svg'
 
 const StyledFeatures = styled.section`
     background-color: ${({ theme }) => theme.colors.lightGray};
+    padding-inline: 1.5rem;
 
     .features {
         position: relative;
         padding-block: 0 5rem;
-        padding-inline: 1.5rem;
 
         &__intro {
             display: flex;
@@ -50,7 +50,6 @@ const StyledFeatures = styled.section`
 
         @media ${({theme}) => theme.laptop} {
             padding-block: 0 7.5rem;
-            padding-inline: 0;
 
             &__intro {
                 margin-bottom: 0;
@@ -88,7 +87,7 @@ const StyledFeatures = styled.section`
 
 const Features = () => {
   return (
-    <StyledFeatures>
+    <StyledFeatures id="features">
         <Container className="features">
             <Shortener />
 
