@@ -2,6 +2,8 @@ import { useState, useRef } from "react"
 import styled from "styled-components"
 import Button from "./Button"
 import ShortLink from "./ShortLink"
+import bgMobile from '../assets/bg-shorten-mobile.svg'
+import bgDesktop from '../assets/bg-shorten-desktop.svg'
 
 const StyledShortener = styled.div`
     position: relative;
@@ -15,6 +17,9 @@ const StyledShortener = styled.div`
         margin-bottom: 1.5rem;
         padding: 1.5rem;
         background-color: ${({theme}) => theme.colors.veryDarkPurple};
+        background-image: url(${bgMobile});
+        background-repeat: no-repeat;
+        background-position:  top right;
         border-radius: 10px;
 
         &.error {
@@ -63,6 +68,7 @@ const StyledShortener = styled.div`
             flex-direction: row;
             padding: 3.25rem 4rem;
             gap: 1.5rem;
+            background-image: url(${bgDesktop});
 
             input {
                 width: 100%;
@@ -149,7 +155,6 @@ const Shortener = () => {
                 {error && <span>Please add a link</span>}
                 <Button 
                     text="Shorten It!" 
-                    // width="279px"
                     borderRad="5px"
                 />
             </form>

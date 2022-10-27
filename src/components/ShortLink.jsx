@@ -14,7 +14,6 @@ const StyledShortLink = styled.li`
         position: relative;
         margin-bottom: .75rem;
         color: ${({theme}) => theme.colors.obsidian};
-        /* border-bottom: 1px solid #9E9AA8; */
 
         &::before {
             content: '';
@@ -41,7 +40,6 @@ const StyledShortLink = styled.li`
         width: 100%;
         height: 40px;
         font-size: ${({theme}) => theme.fontSizes.reg};
-        /* align-self: center; */
     }
 
     @media ${({theme}) => theme.laptop} {

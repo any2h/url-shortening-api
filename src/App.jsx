@@ -4,6 +4,7 @@ import GlobalStyles from './styles/GlobalStyles'
 import Header from './components/Header'
 import Hero from './components/Hero';
 import Features from './components/Features';
+import Boost from "./components/Boost";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <Header />
                 <Hero />
                 <Features />
+                <Boost />
             </div>
         </ThemeProvider>
     )
