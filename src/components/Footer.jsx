@@ -4,7 +4,7 @@ import Logo from "./Logo"
 
 const StyledFooter = styled.footer`
     background-color: ${({ theme }) => theme.colors.obsidian};
-    padding: 3.5rem 1.5rem;
+    padding-block: 3.5rem;
 
     .footer {
         display: flex;

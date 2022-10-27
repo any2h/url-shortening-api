@@ -1,9 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-// import { normalize } from "styled-normalize";
 
 const GlobalStyle = createGlobalStyle`
-    ${'' /* ${normalize} */}
-
     *,
     *::before,
     *::after {
@@ -20,9 +17,16 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
     }
 
+    html {
+        overflow-x: hidden;
+
+        &:focus-within {
+            scroll-behavior: smooth;
+        }
+    }
+
     body {
         min-height: 100vh;
-        ${'' /* padding-inline: 1.5rem; */}
         font-family: 'Poppins', sans-serif;
         line-height: 1.5;
         font-size: ${({theme}) => theme.fontSizes.reg};

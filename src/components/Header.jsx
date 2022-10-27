@@ -5,12 +5,10 @@ import Logo from './Logo'
 import Button from './Button'
 
 const StyledHeader = styled.header`
-    /* background-color: hotpink; */
     position: relative;
     height: 33px;
     display: flex;
     justify-content: space-between;
-    padding-inline: 1.5rem;
     margin-top: 40px;
     font-size: ${({ theme }) => theme.fontSizes.md1};
     color: white;
@@ -29,7 +27,6 @@ const StyledHeader = styled.header`
         height: 383px;
         flex-direction: column;
         padding: 40px 24px;
-        /* justify-content: center; */
         align-items: center;
         background-color: ${({ theme }) => theme.colors.veryDarkPurple};
         border-radius: 10px;
@@ -183,9 +180,9 @@ const Header = () => {
                 <div className='mobile-menu' ref={navRef}>
                     <nav>
                         <ul className='nav'>
-                            <li><a href="">Features</a></li>
-                            <li><a href="">Pricing</a></li>
-                            <li><a href="">Resources</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Resources</a></li>
                         </ul>
                     </nav>
 

@@ -1,8 +1,9 @@
 import styled from "styled-components"
 
 const StyledContainer = styled.div`
-    max-width: 69.375rem;
+    max-width: 72.375rem;
     margin-inline: auto;
+    padding-inline: 1.5rem;
 `
 
 const Container = ({ children, className }) => {

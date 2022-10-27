@@ -1,4 +1,4 @@
-import { useState, useRef } from "react"
+import { useState } from "react"
 import styled from "styled-components"
 import Button from "./Button"
 import ShortLink from "./ShortLink"
@@ -105,7 +105,6 @@ const Shortener = () => {
     const [name, setName] = useState('')
     const [links, setLinks] = useState([])
     const [error, setError] = useState(false)
-    const formRef = useRef(null)
     
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -144,7 +143,6 @@ const Shortener = () => {
         <StyledShortener id="shortener">
             <form 
                 onSubmit={handleSubmit} 
-                ref={formRef}
                 className={error ? 'error' : null}
             >
                 <input 

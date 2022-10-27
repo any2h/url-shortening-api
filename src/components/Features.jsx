@@ -8,7 +8,6 @@ import icon3 from '../assets/icon-fully-customizable.svg'
 
 const StyledFeatures = styled.section`
     background-color: ${({ theme }) => theme.colors.lightGray};
-    padding-inline: 1.5rem;
 
     .features {
         position: relative;

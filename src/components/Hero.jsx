@@ -1,5 +1,4 @@
 import styled from "styled-components"
-// import image from '../assets/illustration-working.svg'
 import cloud from '../assets/cloud.svg'
 import working from '../assets/working.svg'
 import Button from "./Button"
@@ -7,30 +6,24 @@ import Container from "./utils/Container"
 
 const StyledHero = styled.section`
     padding-bottom: 10.5rem;
-    padding-inline: 1.5rem;
     position: relative;
 
     &::before {
             content: '';
             width: 100%;
             height: 100%;
-            /* width: 658px;
-            height: 482px; */
             position: absolute;
+            z-index: -10;
             background-image: url(${cloud});
             background-repeat: no-repeat;
-            background-size: 110%;
-            /* background-size: 120%; */
-            /* background-position: top; */
+            background-size: 139%;
+            left: 15%;
+            bottom: 5%;
         }
 
     .hero__image {
-        /* position: relative; */
         margin-block: 4.1875rem 3.75rem;
-        /* background-image: url(${cloud});
-        background-repeat: no-repeat;
-        background-size: 120%;
-        background-position: 10% 100%; */
+
 
         img {
             position: relative;
@@ -57,6 +50,12 @@ const StyledHero = styled.section`
         display: flex;
         gap: 80px;
         padding-block: 8.75rem 12.1875rem;
+
+        &::before {
+            background-size: 60%;
+            left: 64%;
+            bottom: -12%;
+        }
 
         .hero__image {
             order: 1;
@@ -86,14 +85,15 @@ const Hero = () => {
             <StyledHero>
                 <div className="hero__image">
                     <img src={working} alt="illustration working" />
-                    {/* <img src={cloud} alt="" /> */}
                 </div>
                 <div className="hero__text">
                     <h1>More than just shorter links</h1>
                     <p>Build your brand’s recognition and get detailed insights on how your links are performing.</p>
-                    <Button 
-                        text="Get Started"
-                    />
+                    <a href="#shortener">
+                        <Button 
+                            text="Get Started"
+                        />
+                    </a>
                 </div>
             </StyledHero>
         </Container>
