@@ -35,7 +35,7 @@ const StyledShortener = styled.div`
 
         input {
             height: 48px;
-            border-radius: 5px;
+            border-radius: 10px;
             border: 0;
             text-indent: 1rem;
         }
@@ -154,7 +154,7 @@ const Shortener = () => {
                 {error && <span>Please add a link</span>}
                 <Button 
                     text="Shorten It!" 
-                    borderRad="5px"
+                    borderRad="10px"
                 />
             </form>
             <ul>

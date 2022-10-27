@@ -53,6 +53,7 @@ const StyledFooter = styled.footer`
         }
 
         a {
+            color: #bfbfbf;
             transition: color .15s ease-in-out;
 
             &:hover {
